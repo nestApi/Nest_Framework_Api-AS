@@ -2,7 +2,7 @@
     "type": "lib",
     "config": "air",
 	"compilerOptions": {
-		"library-path": ["../../fzip-master/bin/fzip.swc"],
+		"library-path": ["../fzip-master/bin/fzip.swc"],
 		"source-path": [
 			"src"
 		],
