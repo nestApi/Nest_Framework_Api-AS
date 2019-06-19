@@ -262,7 +262,7 @@ public class updater {
              _zip.addEventListener(Event.COMPLETE, onZipComplete);
              _zip.load(new URLRequest(_ddlList[_fLoadedCount]));
          }*/
-        var ur:URLRequest = new URLRequest(nest._nestServer+ _ddlList[_fLoadedCount]);
+        var ur:URLRequest = new URLRequest(_ddlList[_fLoadedCount]);
         var us:URLStream = new URLStream();
         var name:String;
         name = stringUtils.nameFromUrl(ur.url)

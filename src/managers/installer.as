@@ -278,7 +278,8 @@ public class installer {
             _zip.load(new URLRequest(_ddlList[_fLoadedCount]));
         }
 */
-        var ur:URLRequest = new URLRequest(nest._nestServer+_ddlList[_fLoadedCount]);
+        //trace("_ddlList : "+_ddlList[_fLoadedCount])
+        var ur:URLRequest = new URLRequest(_ddlList[_fLoadedCount]);
         var us:URLStream = new URLStream();
         var name:String;
         name = stringUtils.nameFromUrl(ur.url)
