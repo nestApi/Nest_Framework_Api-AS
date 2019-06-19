@@ -157,7 +157,8 @@ public class connectionManager {
     private static function contentRequestForInstallResult(event:flash.events.Event):void {
        // trace("contentRequestResult() JSON PARSED STRINGED : " + JSON.stringify(JSON.parse(event.currentTarget.data)));
         dataManager.nest_db = JSON.parse(event.currentTarget.data);
-        installer.dbInstall();
+        nest._express?installerExpress.dbInstall():installer.dbInstall();
+
     }
     /** **/
 
@@ -178,7 +179,7 @@ public class connectionManager {
     private static function contentRequestForUpdateResult(event:flash.events.Event):void {
         // trace("contentRequestResult() JSON PARSED STRINGED : " + JSON.stringify(JSON.parse(event.currentTarget.data)));
         dataManager.nest_db = JSON.parse(event.currentTarget.data);
-        updater.dbUpdate()
+        nest._express?updaterExpress.dbUpdate():updater.dbUpdate();
     }
     /** **/
 
